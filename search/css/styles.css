@@ -1,0 +1,180 @@
+@font-face {
+	font-family: PayPal-Sans;
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Regular.eot'); /* IE9 Compat Modes */
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Regular.woff2') format('woff2'), /* Moderner Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Regular.woff') format('woff'), /* Modern Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Regular.svg#69ac2c9fc1e0803e59e06e93859bed03') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: PayPal-Sans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Medium.eot'); /* IE9 Compat Modes */
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Medium.woff2') format('woff2'), /* Moderner Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Medium.woff') format('woff'), /* Modern Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-small/1-0-0/PayPalSansSmall-Medium.svg#69ac2c9fc1e0803e59e06e93859bed03') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: PayPal-Sans-Big;
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Light.eot'); /* IE9 Compat Modes */
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Light.woff2') format('woff2'), /* Moderner Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Light.woff') format('woff'), /* Modern Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Light.svg#69ac2c9fc1e0803e59e06e93859bed03') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: PayPal-Sans-Big;
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Regular.eot'); /* IE9 Compat Modes */
+	src: url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Regular.woff2') format('woff2'), /* Moderner Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Regular.woff') format('woff'), /* Modern Browsers */ url('https://www.paypalobjects.com/ui-web/paypal-sans-big/1-0-0/PayPalSansBig-Regular.svg#69ac2c9fc1e0803e59e06e93859bed03') format('svg'); /* Legacy iOS */
+}
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: PayPal-Sans;
+	font-weight: 400;
+	text-align: center;
+	margin: 24px 0;
+	}
+
+.container {
+	margin: 0 auto;
+	width: 364px;
+	padding: 48px 96px;
+}
+
+.dark {
+	background-color: #0070BA;
+}
+
+input.clearable {
+	line-height: 24px;
+	font-size: 15px;
+	font-family: PayPal-Sans;
+	border-radius: 5px 0px 0px 5px;
+	text-align: left;
+	border: solid 1px #B7BCBF;
+	padding: 11px 0 11px 11px;
+	color: #2C2E2F;
+	float: left;
+	outline: none;
+}
+
+input.clearable.borderless {
+	border: 0px;
+	padding: 12px 0 12px 12px;
+}
+
+.clr {
+	clear: both;
+}
+
+.spacer {
+		height: 48px;
+}
+
+::-webkit-input-placeholder {
+	color: #6C7378;
+}
+
+input:focus {
+	outline: none !important;
+  border: 1px solid #009CDE;
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(0, 156, 222, 1.0) inset;
+}
+
+input.search-submit:focus,
+input.borderless:focus {
+	outline: none !important;
+	-webkit-box-shadow: none;
+}
+
+input:not(:focus) {
+	color: #6C7378;
+}
+
+input.search-submit {
+	display: block;
+	text-indent: -100px;
+	overflow: hidden;
+	border-radius: 0px 5px 5px 0px;
+	text-align: left;
+	border: solid 1px #B7BCBF;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	width: 48px;
+	height: 48px;
+	float: left;
+	background-color: #FFFFFF;
+	background-image: url('../images/search_30_grey.png');
+	outline: none !important;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: center;
+	cursor: pointer;
+	}
+
+input.search-submit:hover {
+	background-color: #F5F7FA;
+}
+
+input.search-submit.alt {
+		background-image: url('../images/search_30_blue.png');
+}
+
+input.search-submit.alt:hover {
+	background-image: url('../images/search_30_blue_hover.png');
+	background-color: #FFFFFF;
+}
+
+input.search-submit.borderless {
+	border: solid 1px #B7BCBF;
+	border-left-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+a.clear-input {
+	left: 275px;
+	top: 9px;
+	overflow: hidden;
+	text-indent: -200px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/clear.png');
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+}
+
+a.clear-input:hover {
+	background-image: url('../images/clear_hover.png');
+}
+
+input.search-submit.default.loader,
+input.search-submit.alt.loader {
+	background-image: url('../images/ic_spinner.gif');
+	background-size: 24px 24px;
+}

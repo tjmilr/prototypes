@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>PayPal</title>
+<link rel='shortcut icon' type='image/x-icon' href='https://www.paypalobjects.com/webstatic/icon/favicon.ico' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery.clearsearch.js"></script>
+<script>
+	$(function() {
+	    // init plugin (with callback)
+	    $('.clearable').clearSearch({ callback: function() { console.log("cleared"); } } );
+
+	    // change width
+	    $('.clearable').width('300px').change();
+	});
+
+
+	$(function() {
+	  $('input.search-submit').click(function() {
+			$(this).toggleClass('loader');
+	  });
+	});
+
+
+	</script>
+
+</head>
+<body>
+<div class="container">
+
+<!-- Search One -->
+<input type="text" placeholder="Search" class="clearable"/>
+<input type="submit" value="Search" class="search-submit default" />
+
+<div class="clr spacer"></div>
+
+<!-- Search Two -->
+<input type="text" placeholder="Search" class="clearable"/>
+<input type="submit" value="Search" class="search-submit alt" />
+
+<div class="clr"></div>
+
+</div>
+
+<!-- Dark Background Search Three-->
+<div class="container dark">
+<input type="text" placeholder="Search" class="clearable borderless"/>
+<input type="submit" value="Search" class="search-submit borderless default" />
+
+
+
+
+<div class="clr spacer"></div>
+
+<!-- Dark Background Search Four-->
+<input type="text" placeholder="Search" class="clearable borderless"/>
+<input type="submit" value="Search" class="search-submit borderless alt" />
+
+
+<div class="clr"></div>
+
+</div>
+
+
+
+</body>
+</html>
